@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editor Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Video Editing Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h2>Transforming Ideas into Visual Masterpieces</h2>
+    </section>
+    
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="video-grid">
+            <div class="video-item">
+                <video src="video1.mp4" controls></video>
+                <p>Project 1</p>
+            </div>
+            <div class="video-item">
+                <video src="video2.mp4" controls></video>
+                <p>Project 2</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a professional video editor with experience in cinematic storytelling.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
+
+<style>
+    body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #1a001a;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+    nav ul li {
+        margin: 0 15px;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    #hero {
+        text-align: center;
+        padding: 100px 0;
+        background: linear-gradient(to right, #3a0a3a, black);
+    }
+    .video-grid {
+        display: flex;
+        gap: 20px;
+    }
+    .video-item {
+        text-align: center;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: auto;
+    }
+    form input, form textarea, form button {
+        margin: 10px 0;
+        padding: 10px;
+    }
+    form button {
+        background-color: purple;
+        color: white;
+        border: none;
+    }
+</style>
